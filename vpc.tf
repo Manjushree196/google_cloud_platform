@@ -1,8 +1,8 @@
 provider "google" {
 
-credentials = file("~/gcp/access-keys.json")
+credentials = file("credential.json")
 
-project = "give your project ID here"
+project = "tough-entry-399404"
 
 region = "asia-northeast1"
 
@@ -20,7 +20,7 @@ resource "google_compute_subnetwork" "public-subnetwork" {
 
 name = "terraform-subnet"
 
-ip_cidr_range = "10.2.0.0/16"
+ip_cidr_range = "10.2.0.0/24"
 
 region = "asia-northeast1"
 
