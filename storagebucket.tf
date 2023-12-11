@@ -2,11 +2,11 @@ provider "google" {
 
       #path for GCP service account credentials
 
-      credentials = file("gosh.json")
+      credentials = file("credential.json")
 
       # GCP project ID
 
-      project     = "dulcet-answer-356105"
+      project     = "tough-entry-399404"
 
       # Any region of your choice
 
@@ -25,9 +25,3 @@ provider "google" {
   force_destroy = true
 
      }
-
-    resource "google_storage_bucket_object" "mybucket0616" {
-  name   = "butterfly01"
-  source = "download.jpg"
-  bucket = "mybucket0616"
-}
