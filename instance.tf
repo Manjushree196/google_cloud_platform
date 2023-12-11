@@ -1,6 +1,6 @@
 provider "google" {
       #path for GCP service account credentials
-      credentials = file("manny.json")
+      credentials = file("credential.json")
       # GCP project ID
       project     = "spatial-garden-356105"
       # Any region of your choice
