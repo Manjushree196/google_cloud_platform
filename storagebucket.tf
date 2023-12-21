@@ -6,7 +6,7 @@ provider "google" {
 
       # GCP project ID
 
-      project     = "tough-entry-399404"
+      project     = "braided-haiku-407013"
 
       # Any region of your choice
 
@@ -18,8 +18,8 @@ provider "google" {
 
     }
 
-     resource "google_storage_bucket" "mybucket0616" {
-  name     = "mybucket0616"
+     resource "google_storage_bucket" "storage_bucket" {
+  name     = "braided-haiku-407013-1"
   location = "europe-west1"
   storage_class = "REGIONAL"
   force_destroy = true
