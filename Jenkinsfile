@@ -12,7 +12,7 @@ pipeline {
 
         stage('View the content') {
             steps {
-                sh 'cat main.tf'
+                sh 'cat instance.tf'
 
             }
             
